@@ -1,0 +1,24 @@
+<block wx:if="{{!isEmpty}}">
+  <scroll-view show-scrollbar="{{false}}" enhanced scroll-y
+  bind:scrolltolower="getMoreVisitor">
+    <view class="visitor">
+      <view class="visitor-title">我的访客</view>
+      <view class="visitor-list">
+        <van-cell-group wx:for="{{visitorList}}" wx:key="id" border="{{false}}" bind:tap="goPassport">
+          <van-cell size="large" title="{{item.houseInfo}}">
+            <text wx:if="{{item.status===1}}" class="tag success">生效中</text>
+            <text wx:if="{{item.status===0}}" class="tag cancel">已生效</text>
+          </van-cell>
+          <van-cell title="访客姓名" border="{{false}}" value="{{item.name}}" />
+          <van-cell title="手机号码" border="{{false}}" value="{{item.mobile}}" />
+          <van-cell title="访问日期" border="{{false}}" value="{{item.visitDate}}" />
+        </van-cell-group>
+      </view>
+    </view>
+  </scroll-view>
+</block>
+
+<view wx:else class="blank">
+  您还没有访客记录，请点击
+  <navigator hover-class="none" class="link" url="/visitor_pkg/pages/form/index">添加</navigator>
+</view>

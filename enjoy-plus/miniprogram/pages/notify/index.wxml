@@ -1,0 +1,12 @@
+<scroll-view enhanced show-scrollbar="{{false}}" scroll-y>
+  <view class="notify-meta">
+    <view class="title">{{noticeDetail.title}}</view>
+    <view class="extra">
+      <view class="author">{{noticeDetail.creatorName}}</view>
+      <view class="datetime">{{noticeDetail.createdAt}}</view>
+    </view>
+  </view>
+  <view class="notify-content">
+    <rich-text nodes="{{noticeDetail.content}}"></rich-text>
+  </view>
+</scroll-view>

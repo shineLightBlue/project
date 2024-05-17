@@ -1,0 +1,13 @@
+.root {
+    height: 100%;
+    :global {
+    .tab-bar {
+        position: fixed;
+        bottom: 0;
+        height: 46px;
+        width: 100%;
+        background-color: #f7f8fa;
+      
+    }
+}
+}

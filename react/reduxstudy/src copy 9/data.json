@@ -1,0 +1,30 @@
+{
+  "tabs": [
+    {
+      "id": 1,
+      "name": "热度",
+      "type": "hot"
+    },
+    {
+      "id": 2,
+      "name": "时间",
+      "type": "time"
+    }
+  ],
+  "list": [
+    {
+      "id": 1,
+      "author": "89 18k",
+      "comment": "瓜子 啤酒",
+      "time": "2021-11-24T03:13:40.644Z",
+      "attitude": 1
+    },
+    {
+      "author": "89 18k",
+      "comment": "33333",
+      "time": "2023-10-25T03:29:58.840Z",
+      "attitude": -1,
+      "id": 2
+    }
+  ]
+}
